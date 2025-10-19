@@ -197,10 +197,10 @@ class TelegramWebApp {
   handlePortfolio() {
     if (this.isTelegram) {
       // Open external link in Telegram
-      this.tg.openLink('https://github.com/muhammadjon-tojiyev');
+      this.tg.openLink('https://github.com/mixtjyv09-bit');
     } else {
       // Fallback for non-Telegram environments
-      window.open('https://github.com/muhammadjon-tojiyev', '_blank');
+      window.open('https://github.com/mixtjyv09-bit', '_blank');
     }
   }
 
