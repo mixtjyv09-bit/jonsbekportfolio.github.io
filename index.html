@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammadjon Tojiyev - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="profile-section">
+        <div class="avatar">
+          <div class="avatar-placeholder">MT</div>
+        </div>
+        <div class="profile-info">
+          <h1 class="name">Muhammadjon Tojiyev</h1>
+          <p class="title">Full Stack Developer</p>
+          <div class="status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for work</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- About Section -->
+      <section class="about-section">
+        <h2 class="section-title">Men haqimda</h2>
+        <div class="about-content">
+          <p class="about-text">
+            Tajribali web dasturchi bo'lib, zamonaviy texnologiyalar yordamida 
+            Telegram botlari, web ilovalar va mobil dasturlar yaratishda ixtisoslashgan.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Telegram API</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+        <h2 class="section-title">Loyihalarim</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-project="portfolio">
+            <div class="project-icon">💼</div>
+            <h3 class="project-title">Portfolio Web App</h3>
+            <p class="project-description">Telegram WebApp yordamida yaratilgan zamonaviy portfolio</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="bot">
+            <div class="project-icon">🤖</div>
+            <h3 class="project-title">Telegram Bot</h3>
+            <p class="project-description">Kuchli funksiyalar bilan jihozlangan Telegram bot</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Telegram API</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="panel">
+            <div class="project-icon">⚙️</div>
+            <h3 class="project-title">Linux Panel</h3>
+            <p class="project-description">Server boshqarish uchun web interfeys</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience-section">
+        <h2 class="section-title">Tajriba</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Full Stack Developer</h3>
+              <p class="timeline-company">Freelance</p>
+              <p class="timeline-period">2022 - Hozirgacha</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Web Developer</h3>
+              <p class="timeline-company">IT Company</p>
+              <p class="timeline-period">2020 - 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="contact-buttons">
+        <button class="contact-btn primary" id="contactBtn">
+          <span class="btn-icon">💬</span>
+          Bog'lanish
+        </button>
+        <button class="contact-btn secondary" id="portfolioBtn">
+          <span class="btn-icon">📁</span>
+          Portfolio
+        </button>
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2024 Muhammadjon Tojiyev. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+    <p>Yuklanmoqda...</p>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <span class="toast-icon">✅</span>
+      <span class="toast-message">Xabar yuborildi!</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
